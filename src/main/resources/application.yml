@@ -1,0 +1,7 @@
+rocketmq:
+  name-server: 120.24.30.157:9876
+  producer:
+    group: my-producer-group  # 生产者组名（必须配置）
+
+server:
+  port: 8080
