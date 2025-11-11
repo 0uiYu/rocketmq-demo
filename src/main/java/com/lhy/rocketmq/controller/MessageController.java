@@ -16,6 +16,7 @@ public class MessageController {
     public String sendMessage(@RequestParam String msg) {
         // 发送到 Topic: "TestTopic"
         rocketMQTemplate.convertAndSend("TestTopic", msg);
+        System.out.println("test2");
         return "✅ 消息已发送: " + msg;
     }
 }
