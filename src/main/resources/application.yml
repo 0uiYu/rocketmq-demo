@@ -2,6 +2,7 @@ rocketmq:
   name-server: 120.24.30.157:9876
   producer:
     group: my-producer-group  # 生产者组名（必须配置）
-
+    send-message-timeout: 10000  # 单位：毫秒，默认 3000
 server:
-  port: 8080
+  port: 8083
+
